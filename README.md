@@ -1,12 +1,13 @@
 # scoped-permission-system-demo
 
 > **Demo reconstruction of a real production architecture.** The access
-> control and workflow design this mirrors runs in an ERP built during my
-> IT internship at **GSI Group** (Semarang, Indonesia). The live system's
-> code, its actual modules, regions, roles and grants are the company's
-> and are **not** published here - deliberately so, since those are
-> security-relevant. What follows is a clean-room rebuild of the pattern
-> with invented module and region names.
+> control and workflow design this mirrors runs in an ERP I built for
+> **Zuliya Group** (Indonesia). The live system's code, and its actual
+> modules, regions, roles and grants, are the company's and are **not**
+> published here - deliberately so, since those are security-relevant.
+> What follows is a clean-room rebuild of the pattern with invented
+> module and region names.
+
 
 
 Two ERP architecture patterns, written as clean-room demos — no real
@@ -70,10 +71,37 @@ wf.add_region_override("REGION-SMALL",  SkipStage("finance_review"))
 
 wf.stages_for_region("REGION-EXPORT")
 # ['submitted', 'supervisor_review', 'compliance_review', 'finance_review', 'approved']
+
+> **Demo reconstruction of a real production architecture.** The access
+> control and workflow design this mirrors runs in an ERP I built for
+> **Zuliya Group** (Indonesia). The live system's code, and its actual
+> modules, regions, roles and grants, are the company's and are **not**
+> published here - deliberately so, since those are security-relevant.
+> What follows is a clean-room rebuild of the pattern with invented
+> module and region names.
+
 wf.stages_for_region("REGION-SMALL")
 # ['submitted', 'supervisor_review', 'approved']
+
+> **Demo reconstruction of a real production architecture.** The access
+> control and workflow design this mirrors runs in an ERP I built for
+> **Zuliya Group** (Indonesia). The live system's code, and its actual
+> modules, regions, roles and grants, are the company's and are **not**
+> published here - deliberately so, since those are security-relevant.
+> What follows is a clean-room rebuild of the pattern with invented
+> module and region names.
+
 wf.stages_for_region("REGION-PLAIN")
 # unchanged defaults
+
+> **Demo reconstruction of a real production architecture.** The access
+> control and workflow design this mirrors runs in an ERP I built for
+> **Zuliya Group** (Indonesia). The live system's code, and its actual
+> modules, regions, roles and grants, are the company's and are **not**
+> published here - deliberately so, since those are security-relevant.
+> What follows is a clean-room rebuild of the pattern with invented
+> module and region names.
+
 ```
 
 An override referencing a stage that doesn't exist is rejected **at
