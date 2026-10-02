@@ -1,5 +1,14 @@
 # scoped-permission-system-demo
 
+> **Demo reconstruction of a real production architecture.** The access
+> control and workflow design this mirrors runs in an ERP built during my
+> IT internship at **GSI Group** (Semarang, Indonesia). The live system's
+> code, its actual modules, regions, roles and grants are the company's
+> and are **not** published here - deliberately so, since those are
+> security-relevant. What follows is a clean-room rebuild of the pattern
+> with invented module and region names.
+
+
 Two ERP architecture patterns, written as clean-room demos — no real
 company data, no real module or region names, nothing copied from any
 employer/client codebase.
